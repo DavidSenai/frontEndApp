@@ -8,7 +8,7 @@ const App = () => {
   useEffect(() => {
     // Faz a requisição para o back-end
     axios
-      .get("http://10.144.170.84:5000/usuarios")
+      .get("http://10.40.237.171:5000/usuarios")
       .then((response) => {
         setUsuarios(response.data);
       })
@@ -39,6 +39,7 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 20,
     justifyContent: "center",
+    alignItems: "center",
   },
   title: {
     fontSize: 24,
